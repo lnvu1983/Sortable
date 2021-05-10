@@ -1120,7 +1120,7 @@ Sortable.prototype = /** @lends Sortable.prototype */ {
 		if (Sortable.eventCanceled) return completedFired;
 
 		if (dragEl.contains(evt.target)) {
-			_onMove(rootEl, el, dragEl, dragRect, target, targetRect, evt, after);
+			onMove(rootEl, el, dragEl, dragRect, target, targetRect, evt, !!target);
 		}
 
 		if (
