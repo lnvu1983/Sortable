@@ -30,14 +30,14 @@
 	},
 	"maintainers": [
 		"Konstantin Lebedev <ibnRubaXa@gmail.com>",
-		"Owen Mills <owen23355@gmail.com>"
+		"Owen Mills <owen23355@gmail.com>",
+		"Nguyen Vu Luu <nguyenvuluu@gmail.com>"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/SortableJS/Sortable.git"
+		"url": "git//github.com/lnvu1983/Sortable.git"
 	},
 	"files": [
-		"Sortable.js",
 		"Sortable.min.js",
 		"modular/"
 	],
