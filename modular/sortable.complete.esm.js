@@ -1,5 +1,5 @@
 /**!
- * Sortable 1.13.2
+ * Sortable 1.14
  * @author	RubaXa   <trash@rubaxa.org>
  * @author	owenm    <owen23355@gmail.com>
  * @license MIT
@@ -126,7 +126,7 @@ function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance");
 }
 
-var version = "1.13.2";
+var version = "1.14";
 
 function userAgent(pattern) {
   if (typeof window !== 'undefined' && window.navigator) {
@@ -305,6 +305,17 @@ function getWindowScrollingElement() {
 
 
 function getRect(el, relativeToContainingBlock, relativeToNonStaticParent, undoScale, container) {
+  if (el === null) {
+    return {
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      width: 0,
+      height: 0
+    };
+  }
+
   if (!el.getBoundingClientRect && el !== window) return;
   var elRect, top, left, bottom, right, height, width;
 
